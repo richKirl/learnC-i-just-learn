@@ -27,8 +27,17 @@ template <typename... Args>
 auto first_arg(Args... args) {
     return args...[0];
 }
+//6
+template <typename... Args>
+auto last_arg(Args... args) {
+    return args...[sizeof...(args)-1];
+}
 int main(){
 
+    auto temp = first_arg(1,2,3,4,5,6);
+    print_it(std::to_string(temp));
 
+    temp = last_arg(1,2,3,4,5,6);
+    print_it(std::to_string(temp));
     return 0;
 }
