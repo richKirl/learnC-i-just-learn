@@ -35,9 +35,9 @@ auto last_arg(Args... args) {
 int main(){
 
     auto temp = first_arg(1,2,3,4,5,6);
-    print_it(std::to_string(temp));
+    print_it(to_string(temp));
 
     temp = last_arg(1,2,3,4,5,6);
-    print_it(std::to_string(temp));
+    print_it(to_string(temp));
     return 0;
 }
