@@ -2,10 +2,10 @@
 
 # Настройки те же
 CXX="clang++-20"
-STD="-std=c++2c"
+STD="-std=c++2c -O2"
 STDLIB="-stdlib=libc++ -Wno-unused-command-line-argument"
 #-lSDL2 -lSDL2_image -lSDL2_mixer -lGL -lGLEW
-LIBS=""
+LIBS="-lSDL2 -lSDL2_image -lSDL2_mixer -lGL -lGLEW"
 MOD_EXT="cppm"
 STD_MODULE_PATH="/usr/lib/llvm-20/share/libc++/v1/std.cppm"
 
